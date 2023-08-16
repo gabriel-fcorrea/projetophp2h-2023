@@ -1,13 +1,23 @@
-<?php 
+<?php
 
-	echo("Criando mais um projeto <br>");
 
-	$nota1 = 6.5;
-	$nota2 = 8.5;
-	$trabalho = 9.5;
+	$data = "20 de agosto de 2020";			//string 
+	$salario = 850.00;						// float ou double
+	$cargo = "Estagiário";					// string
+	$idade = 18;							// integer ou int
+	$resultado = true;						// boolean
 
-	$media = ($nota1+$nota2+$trabalho)/3;
+	if ($resultado) {
+		echo "Verdadeiro";
+	}
 
-	echo "Sua média nas atividades é " . $media;
+	echo "Arquivo criado em $data <br>";
 
- ?>
+	printf("Salário mínimo: R$ %.2f <br>", $salario);
+
+	$texto = sprintf("%s recebe R$ %.2f por mês", $cargo, $salario*2);
+
+	echo $texto;
+
+
+?>
